@@ -1,0 +1,22 @@
+.main {
+    -fx-background-color: #b8fffd;
+}
+.title-container {
+    -fx-text-fill: #323d3d;
+}
+
+.quizzes .button {
+    -fx-background-color: transparent;
+}
+
+.quizzes VBox {
+    -fx-border-color: #bcf5f3;
+    -fx-background-color: #cffcfb;
+}
+
+.quizzes VBox:hover {
+    -fx-border-color: #c2c4c4;
+    -fx-background-color: #8afffb;
+}
+
+
