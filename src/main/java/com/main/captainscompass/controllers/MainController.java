@@ -1,14 +1,28 @@
 package com.main.captainscompass.controllers;
 
+import com.main.captainscompass.App;
+import com.main.captainscompass.scenes.LightSignals;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class MainController {
-    @FXML
-    private Label welcomeText;
+    private static final String LIGHT_SIGNALS_FXML = "light-signals.fxml";
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    private VBox lightSignals;
+
+    private Stage stage;
+
+    @FXML
+    void startLightSignalsQuiz(MouseEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(App.class.getResource(LIGHT_SIGNALS_FXML));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(new LightSignals(loader, 1000, 800));
     }
 }

@@ -1,0 +1,8 @@
+.body {
+    -fx-background-color: #b8fffd;
+}
+
+.exitIcon:hover {
+    -fx-fill: gray;
+}
+
