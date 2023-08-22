@@ -15,23 +15,21 @@
 
 <VBox alignment="TOP_CENTER" spacing="20.0" styleClass="main" stylesheets="@styles/mainStyles.css" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.captainscompass.controllers.MainController">
    <AnchorPane prefHeight="121.0" prefWidth="800.0" styleClass="title-container">
-      <children>
-          <Label alignment="CENTER" text="Captain's Compass" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-              <font>
-                <Font size="30.0" />
-              </font>
-          </Label>
-         <Label alignment="CENTER" text="The app to practice for your yacht exam" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
-            <font>
-               <Font size="22.0" />
-            </font>
-         </Label>
-         <ImageView fitHeight="155.0" fitWidth="155.0" layoutX="600.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-            <image>
-               <Image url="@assets/sailboaticon.png" />
-            </image>
-         </ImageView>
-      </children>
+      <Label alignment="CENTER" text="Captain's Compass" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" text="The app to practice for your yacht exam" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="155.0" fitWidth="155.0" layoutX="600.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@assets/sailboaticon.png" />
+         </image>
+      </ImageView>
    </AnchorPane>
    <Label text="Quizzes">
       <font>
