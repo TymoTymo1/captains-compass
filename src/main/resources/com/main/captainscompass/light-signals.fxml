@@ -6,8 +6,8 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="800.0" prefWidth="1000.0" styleClass="body" stylesheets="@styles/lightSignalsStyles.css" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.captainscompass.controllers.LightSignalsController">
    <children>
@@ -23,12 +23,22 @@
                   <Font size="30.0" />
                </font>
             </Label>
-            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <ImageView fitHeight="155.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
                   <Image url="@assets/sailboaticon.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
+      <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <ImageView fx:id="quizImage" fitHeight="300.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="quizLabel">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
