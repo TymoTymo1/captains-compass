@@ -47,7 +47,7 @@ public class LightSignals {
             try (BufferedReader reader = new BufferedReader(new InputStreamReader(inStream))) {
                 String line;
                 while ((line = reader.readLine()) != null) {
-                    String[] tokens = line.split("-");
+                    String[] tokens = line.split(":");
                     int number = Integer.parseInt(tokens[0]);
                     String answer = tokens[1];
 
@@ -68,7 +68,7 @@ public class LightSignals {
         String file = files[randNumber];
         String[] possibleAnswers = new String[3];
 
-        String correctAnswer = files[randNumber];
+        String correctAnswer = answers[randNumber];
         possibleAnswers[0] = correctAnswer;
 
         int index = 1;
@@ -79,7 +79,9 @@ public class LightSignals {
                 possibleAnswers[index] = ans;
                 index++;
             }
-        } while (index < 2);
+        } while (index < 3);
+
+        System.out.println(Arrays.toString(possibleAnswers));
 
         return new QuizSet(file, possibleAnswers);
     }

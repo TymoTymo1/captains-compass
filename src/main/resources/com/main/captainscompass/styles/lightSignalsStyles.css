@@ -6,3 +6,16 @@
     -fx-fill: gray;
 }
 
+.answer {
+    -fx-border-color: #9b9c9e;
+    -fx-border-radius: 20px;
+    -fx-background-color: white;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5, 0, 0, 0);
+    -fx-wrap-text: true;
+}
+
+.answer:hover {
+    -fx-border-color: #848587;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}

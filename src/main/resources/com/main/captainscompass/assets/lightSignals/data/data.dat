@@ -1,18 +1,18 @@
-1-Ship on the way as seen from the stern
-2-The ship as seen from the port side
-3-The ship as seen from the starboard side
-4-Towing ship and towed ship en route seen from the stern
-5-A ship with a length of more than 50 m and less than 100 m standing at anchor
-6-A power-driven vessel with a length of less than 50 m on the road as seen from the port side
-7-Vessel engaged in fishing other than poisonous not advancing on water
-8-Ship engaged in fishing - poisonous - not advancing on water
-9-A mechanically propelled vessel with a length of less than 50 m en route as seen from the starboard side
-10-Towing vessel seen from the stern
-11-A power-driven ship on the road in an unmolested state as seen from the stern
-12-Towed/sailing vessel seen from the bow
-13-Ship not responsible for its movements not moving on water
-14-A power-driven vessel of less than 50 m in length, towing a set of with a length of less than 200 m, seen from the port side.
-15-A power-driven vessel of more than 50 m in length, en route, seen from the port side.
-16-Ship on pilot duty, en route, seen from the stern
-17-A vessel busy fishing, other than trawling, advancing on the water, seen from the stern;
-18-A power-driven vessel less than 50 m in length, towing a set with a length of less than 200 m, seen from the starboard side.
+1:Ship on the way as seen from the stern
+2:The ship as seen from the port side
+3:The ship as seen from the starboard side
+4:Towing ship and towed ship en route seen from the stern
+5:A ship with a length of more than 50 m and less than 100 m standing at anchor
+6:A power-driven vessel with a length of less than 50 m on the road as seen from the port side
+7:Vessel engaged in fishing other than poisonous not advancing on water
+8:Ship engaged in fishing - poisonous - not advancing on water
+9:A mechanically propelled vessel with a length of less than 50 m en route as seen from the starboard side
+10:Towing vessel seen from the stern
+11:A power-driven ship on the road in an unmolested state as seen from the stern
+12:Towed/sailing vessel seen from the bow
+13:Ship not responsible for its movements not moving on water
+14:A power-driven vessel of less than 50 m in length, towing a set of with a length of less than 200 m, seen from the port side.
+15:A power-driven vessel of more than 50 m in length, en route, seen from the port side.
+16:Ship on pilot duty, en route, seen from the stern
+17:A vessel busy fishing, other than trawling, advancing on the water, seen from the stern;
+18:A power-driven vessel less than 50 m in length, towing a set with a length of less than 200 m, seen from the starboard side.
