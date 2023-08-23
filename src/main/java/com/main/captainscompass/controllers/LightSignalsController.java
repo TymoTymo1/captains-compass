@@ -12,15 +12,16 @@ import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import java.net.URL;
+import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
 
 public class LightSignalsController extends Controller implements Initializable {
     private static final int NUMBER_OF_ANSWERS = 3;
-
     @FXML
     ImageView quizImage;
     @FXML
@@ -29,6 +30,8 @@ public class LightSignalsController extends Controller implements Initializable 
     private Button answer2;
     @FXML
     private Button answer3;
+    @FXML
+    private Button next;
 
     private int correct;
     private Button[] buttons;
@@ -39,11 +42,50 @@ public class LightSignalsController extends Controller implements Initializable 
         SceneManager.changeScene(Scenes.MAIN_SCENE, activeStage);
     }
 
-    @Override
-    public void onSceneLoaded() {
+    @FXML
+    void submitAnswer(MouseEvent event) {
+        Button clicked = (Button)event.getSource();
+        int index = Arrays.asList(buttons).indexOf(clicked);
+        if (index == correct) {
+        } else {
+            clicked.getStyleClass().add("incorrect-answer");
+        }
+
+        buttons[correct].getStyleClass().add("correct-answer");
+        next.setDisable(false);
+
+        for (Button button: buttons) {
+            if (button.equals(clicked)) continue;
+            button.setDisable(true);
+        }
+    }
+
+    @FXML
+    void next(MouseEvent event) {
+        resetStyles();
         loadQuiz();
     }
 
+    @Override
+    public void onSceneLoaded() {
+        resetStyles();
+        loadQuiz();
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        buttons = new Button[] {answer1, answer2, answer3};
+    }
+
+    private void resetStyles() {
+        for (Button button: buttons) {
+            button.getStyleClass().remove("incorrect-answer");
+            button.getStyleClass().remove("correct-answer");
+        }
+        for (Button button: buttons) {
+            button.setDisable(false);
+        }
+    }
 
     private void loadQuiz() {
         LightSignals.QuizSet quizSet = LightSignals.getRandomQuizSet();
@@ -62,10 +104,5 @@ public class LightSignalsController extends Controller implements Initializable 
         for (int i = 0; i < NUMBER_OF_ANSWERS; i++) {
             buttons[i].setText(possibleAnswers[answerIndices.get(i)]);
         }
-    }
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        buttons = new Button[] {answer1, answer2, answer3};
     }
 }

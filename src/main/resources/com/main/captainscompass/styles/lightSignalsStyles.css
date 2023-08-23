@@ -19,3 +19,20 @@
     -fx-border-color: #848587;
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
 }
+
+.incorrect-answer {
+    -fx-background-color: rgba(255, 0, 0, 0.6);
+}
+
+.correct-answer {
+    -fx-background-color: rgba(0, 255, 0, 0.6);
+}
+
+.next {
+    -fx-background-color: transparent;
+}
+
+.next:hover {
+    -fx-text-fill: rgba(0,0,0,0.6);
+}
+

@@ -13,9 +13,8 @@ import java.util.Random;
 public class LightSignals {
     public static final int NUMBER_OF_QUESTIONS = 18;
 
-    private static String[] files = new String[NUMBER_OF_QUESTIONS];
-    private static String[] answers = new String[NUMBER_OF_QUESTIONS];
-    private static Random random = new Random();
+    private static final String[] files = new String[NUMBER_OF_QUESTIONS];
+    private static final String[] answers = new String[NUMBER_OF_QUESTIONS];
 
     public static class QuizSet {
         String file;
@@ -63,7 +62,7 @@ public class LightSignals {
     }
 
     public static QuizSet getRandomQuizSet() {
-        int randNumber = random.nextInt(NUMBER_OF_QUESTIONS);
+        int randNumber = (int)(Math.random()*NUMBER_OF_QUESTIONS);
 
         String file = files[randNumber];
         String[] possibleAnswers = new String[3];
@@ -73,15 +72,13 @@ public class LightSignals {
 
         int index = 1;
         do {
-            int newRand = random.nextInt(NUMBER_OF_QUESTIONS);
+            int newRand = (int)(Math.random()*NUMBER_OF_QUESTIONS);
             String ans = answers[newRand];
             if (!Arrays.asList(possibleAnswers).contains(ans)) {
                 possibleAnswers[index] = ans;
                 index++;
             }
         } while (index < 3);
-
-        System.out.println(Arrays.toString(possibleAnswers));
 
         return new QuizSet(file, possibleAnswers);
     }

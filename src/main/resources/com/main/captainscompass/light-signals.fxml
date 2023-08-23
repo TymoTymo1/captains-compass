@@ -35,7 +35,7 @@
       <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
          <children>
             <ImageView fx:id="quizImage" fitHeight="300.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" />
-            <Button fx:id="answer1" mnemonicParsing="false" prefHeight="60.0" prefWidth="500.0" styleClass="answer">
+            <Button fx:id="answer1" mnemonicParsing="false" onMouseClicked="#submitAnswer" prefHeight="60.0" prefWidth="500.0" styleClass="answer">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
@@ -43,7 +43,7 @@
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="answer2" mnemonicParsing="false" prefHeight="60.0" prefWidth="500.0" styleClass="answer">
+            <Button fx:id="answer2" mnemonicParsing="false" onMouseClicked="#submitAnswer" prefHeight="60.0" prefWidth="500.0" styleClass="answer">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
@@ -51,7 +51,7 @@
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="answer3" mnemonicParsing="false" prefHeight="60.0" prefWidth="500.0" styleClass="answer">
+            <Button fx:id="answer3" mnemonicParsing="false" onMouseClicked="#submitAnswer" prefHeight="60.0" prefWidth="500.0" styleClass="answer">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
@@ -61,5 +61,10 @@
             </Button>
          </children>
       </VBox>
+      <Button fx:id="next" disable="true" mnemonicParsing="false" onMouseClicked="#next" styleClass="next" text="Next" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font name="Source Serif Pro Light" size="24.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
