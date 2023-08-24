@@ -85,6 +85,7 @@ public class LightSignalsController extends Controller implements Initializable 
         for (Button button: buttons) {
             button.setDisable(false);
         }
+        next.setDisable(true);
     }
 
     private void loadQuiz() {

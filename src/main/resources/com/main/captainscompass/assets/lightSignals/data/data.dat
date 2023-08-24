@@ -4,8 +4,8 @@
 4:Towing ship and towed ship en route seen from the stern
 5:A ship with a length of more than 50 m and less than 100 m standing at anchor
 6:A power-driven vessel with a length of less than 50 m on the road as seen from the port side
-7:Vessel engaged in fishing other than poisonous not advancing on water
-8:Ship engaged in fishing - poisonous - not advancing on water
+7:Vessel engaged in fishing other than trawling not advancing on water
+8:Ship engaged in fishing - trawling - not advancing on water
 9:A mechanically propelled vessel with a length of less than 50 m en route as seen from the starboard side
 10:Towing vessel seen from the stern
 11:A power-driven ship on the road in an unmolested state as seen from the stern
@@ -16,3 +16,15 @@
 16:Ship on pilot duty, en route, seen from the stern
 17:A vessel busy fishing, other than trawling, advancing on the water, seen from the stern;
 18:A power-driven vessel less than 50 m in length, towing a set with a length of less than 200 m, seen from the starboard side.
+19:A power-driven vessel of more than 50 m in length, en route, seen from the starboard side.
+20:A vessel engaged in trawling with a length of more than 50 m, not advancing on the water, seen from the port side.
+21:A vessel engaged in trawling with a length of more than 50 m, not advancing advancing on the water, seen from the starboard side.
+22:A vessel engaged in trawling with a length of more than 50 m, not advancing on the water, seen from the bow.
+23:A ship busy fishing - trawling, advancing on the water, seen from the stern.
+24:A vessel with limited maneuverability, not advancing through the water.
+25:The towing vessel and the towed vessel, seen from the stern.
+26:A vessel engaged in fishing, other than trawling, advancing on the water, seen from the port side.
+27:A ship not in charge of its movements, advancing through the water, seen from the stern;
+28:A vessel engaged in fishing - trawling - with a length of less than 50 m, advancing on the water, seen from the starboard side.
+29:A vessel of less than 50 m in length, on pilot service, en route, seen from the port side.
+30:Power-driven vessel with a length of less than 50 m, on the way, seen from the bow.

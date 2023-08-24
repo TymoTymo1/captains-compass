@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.Random;
 
 public class LightSignals {
-    public static final int NUMBER_OF_QUESTIONS = 18;
+    public static final int NUMBER_OF_QUESTIONS = 30;
 
     private static final String[] files = new String[NUMBER_OF_QUESTIONS];
     private static final String[] answers = new String[NUMBER_OF_QUESTIONS];
@@ -69,6 +69,8 @@ public class LightSignals {
 
         String correctAnswer = answers[randNumber];
         possibleAnswers[0] = correctAnswer;
+
+        System.out.println(randNumber + " " + file + " " + correctAnswer);
 
         int index = 1;
         do {
