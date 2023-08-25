@@ -47,7 +47,7 @@
        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
      </rowConstraints>
       <children>
-         <VBox fx:id="lightSignals" alignment="CENTER" onMouseClicked="#startLightSignalsQuiz" prefWidth="400.0">
+         <VBox alignment="CENTER" onMouseClicked="#startLightSignalsQuiz" prefWidth="400.0">
             <children>
                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                   <image>
@@ -64,14 +64,14 @@
                <Cursor fx:constant="HAND" />
             </cursor>
          </VBox>
-         <VBox alignment="CENTER" GridPane.columnIndex="1">
+         <VBox alignment="CENTER" onMouseClicked="#startNauticalAlphabetQuiz" GridPane.columnIndex="1">
             <children>
                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                   <image>
-                     <Image url="@assets/alarm.png" />
+                     <Image url="@assets/alphabet.png" />
                   </image>
                </ImageView>
-               <Button mnemonicParsing="false" text="Security Signals">
+               <Button mnemonicParsing="false" text="Nautical Alphabet">
                   <font>
                      <Font size="20.0" />
                   </font>

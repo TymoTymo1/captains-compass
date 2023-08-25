@@ -20,7 +20,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class LightSignalsController extends Controller implements Initializable {
+public class LightSignalsController extends QuizController implements Initializable {
     private static final int NUMBER_OF_ANSWERS = 3;
     @FXML
     ImageView quizImage;
@@ -30,24 +30,15 @@ public class LightSignalsController extends Controller implements Initializable 
     private Button answer2;
     @FXML
     private Button answer3;
-    @FXML
-    private Button next;
 
     private int correct;
     private Button[] buttons;
 
     @FXML
-    void goBack(MouseEvent event) {
-        Stage activeStage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        SceneManager.changeScene(Scenes.MAIN_SCENE, activeStage);
-    }
-
-    @FXML
     void submitAnswer(MouseEvent event) {
         Button clicked = (Button)event.getSource();
         int index = Arrays.asList(buttons).indexOf(clicked);
-        if (index == correct) {
-        } else {
+        if (index != correct) {
             clicked.getStyleClass().add("incorrect-answer");
         }
 
@@ -60,24 +51,13 @@ public class LightSignalsController extends Controller implements Initializable 
         }
     }
 
-    @FXML
-    void next(MouseEvent event) {
-        resetStyles();
-        loadQuiz();
-    }
-
-    @Override
-    public void onSceneLoaded() {
-        resetStyles();
-        loadQuiz();
-    }
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         buttons = new Button[] {answer1, answer2, answer3};
     }
 
-    private void resetStyles() {
+    @Override
+    void resetStyles() {
         for (Button button: buttons) {
             button.getStyleClass().remove("incorrect-answer");
             button.getStyleClass().remove("correct-answer");
@@ -88,7 +68,8 @@ public class LightSignalsController extends Controller implements Initializable 
         next.setDisable(true);
     }
 
-    private void loadQuiz() {
+    @Override
+    void loadQuiz() {
         LightSignals.QuizSet quizSet = LightSignals.getRandomQuizSet();
         String[] possibleAnswers = quizSet.getPossibleAnswers();
 
@@ -106,4 +87,6 @@ public class LightSignalsController extends Controller implements Initializable 
             buttons[i].setText(possibleAnswers[answerIndices.get(i)]);
         }
     }
+
+
 }

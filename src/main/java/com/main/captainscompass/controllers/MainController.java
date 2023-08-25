@@ -18,6 +18,12 @@ public class MainController extends Controller{
         SceneManager.changeScene(Scenes.LIGHT_SIGNALS_SCENE, activeStage);
     }
 
+    @FXML
+    void startNauticalAlphabetQuiz(MouseEvent event) {
+        Stage activeStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        SceneManager.changeScene(Scenes.NAUTICAL_ALPHABET_SCENE, activeStage);
+    }
+
     @Override
     public void onSceneLoaded() {
     }

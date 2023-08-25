@@ -1,0 +1,23 @@
+.body {
+    -fx-background-color: #b8fffd;
+}
+
+.exitIcon:hover {
+    -fx-fill: gray;
+}
+
+.next {
+    -fx-background-color: transparent;
+}
+
+.next:hover {
+    -fx-text-fill: rgba(0,0,0,0.6);
+}
+
+.incorrect-answer {
+    -fx-background-color: rgba(255, 0, 0, 0.6);
+}
+
+.correct-answer {
+    -fx-background-color: rgba(0, 255, 0, 0.6);
+}
