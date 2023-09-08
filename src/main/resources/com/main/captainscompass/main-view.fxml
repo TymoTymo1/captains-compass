@@ -43,8 +43,6 @@
      </columnConstraints>
      <rowConstraints>
        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
      </rowConstraints>
       <children>
          <VBox alignment="CENTER" onMouseClicked="#startLightSignalsQuiz" prefWidth="400.0">
@@ -72,54 +70,6 @@
                   </image>
                </ImageView>
                <Button mnemonicParsing="false" text="Nautical Alphabet">
-                  <font>
-                     <Font size="20.0" />
-                  </font>
-               </Button>
-            </children>
-            <cursor>
-               <Cursor fx:constant="HAND" />
-            </cursor>
-         </VBox>
-         <VBox alignment="CENTER" GridPane.rowIndex="1">
-            <children>
-               <Button mnemonicParsing="false" text="Button">
-                  <font>
-                     <Font size="20.0" />
-                  </font>
-               </Button>
-            </children>
-            <cursor>
-               <Cursor fx:constant="HAND" />
-            </cursor>
-         </VBox>
-         <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
-            <children>
-               <Button mnemonicParsing="false" text="Button">
-                  <font>
-                     <Font size="20.0" />
-                  </font>
-               </Button>
-            </children>
-            <cursor>
-               <Cursor fx:constant="HAND" />
-            </cursor>
-         </VBox>
-         <VBox alignment="CENTER" GridPane.rowIndex="2">
-            <children>
-               <Button mnemonicParsing="false" text="Button">
-                  <font>
-                     <Font size="20.0" />
-                  </font>
-               </Button>
-            </children>
-            <cursor>
-               <Cursor fx:constant="HAND" />
-            </cursor>
-         </VBox>
-         <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
-            <children>
-               <Button mnemonicParsing="false" text="Button">
                   <font>
                      <Font size="20.0" />
                   </font>
